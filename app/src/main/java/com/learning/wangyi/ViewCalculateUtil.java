@@ -8,8 +8,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /**
- * 通过程序对控件
- */
+ * 通过程序对控件进行动态缩放
+ **/
 public class ViewCalculateUtil {
 
     public static void setViewRelativeLayoutParam(View view, int width, int height, int topMargin, int bottomMargin, int lefMargin, int rightMargin)
