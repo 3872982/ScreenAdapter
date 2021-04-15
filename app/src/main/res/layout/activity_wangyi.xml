@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.learning.wangyi.UIRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <TextView
+            android:id="@+id/tv_1080"
+            android:text="1080px"
+            android:layout_width="1080px"
+            android:background="@android:color/holo_orange_dark"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_540"
+            android:text="540px"
+            android:layout_width="540px"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:layout_below="@id/tv_1080"/>
+    </com.learning.wangyi.UIRelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_tool1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="工具类适配设置1080px"
+        android:background="@android:color/holo_orange_dark"/>
+    <TextView
+        android:id="@+id/tv_tool2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="工具类适配设置540px"
+        android:background="@android:color/holo_orange_light" />
+</LinearLayout>
